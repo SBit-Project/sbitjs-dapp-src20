@@ -1,0 +1,8 @@
+build
+node_modules
+.sbit
+.DS_Store
+solar.json
+dist
+.vscode
+.cache
