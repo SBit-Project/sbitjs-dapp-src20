@@ -1,5 +1,5 @@
 import { observable } from "mobx"
-import { SBit, SBitRPC, Contract } from "sbitjs"
+import { Sbit, SbitRPC, Contract } from "sbitjs"
 
 import { ITransferLog, ITxRecord } from "./types"
 import { TxRecord } from "./views/TxRecord"
@@ -9,7 +9,7 @@ import { TxRecord } from "./views/TxRecord"
 const SBIT_RPC = "http://localhost:9888"
 import * as repo from "../solar.json"
 
-const sbit = new SBit(SBIT_RPC, repo as any)
+const sbit = new Sbit(SBIT_RPC, repo as any)
 const myToken = sbit.contract("zeppelin-solidity/contracts/token/SRC20/CappedToken.sol")
 
 export class Store {
